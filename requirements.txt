@@ -1,0 +1,8 @@
+click
+helpsk
+jupyter-contrib-nbextensions
+notebook
+numpy
+pandas
+plotly
+plotly-express
