@@ -1,8 +1,12 @@
 click
 helpsk
 jupyter-contrib-nbextensions
+line_profiler
 notebook
 numpy
 pandas
 plotly
 plotly-express
+snakeviz
+memory_profiler
+psutil

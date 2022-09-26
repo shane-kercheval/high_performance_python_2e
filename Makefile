@@ -24,3 +24,7 @@ linting:
 
 main:
 	python main.py
+
+
+snakeviz_02:
+	snakeviz 02_profiling/profile.stats

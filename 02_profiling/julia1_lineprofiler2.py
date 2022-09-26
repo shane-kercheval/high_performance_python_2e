@@ -17,6 +17,8 @@ def calculate_z_serial_purepython(maxiter, zs, cs):
         while True:
             not_yet_escaped = abs(z) < 2
             iterations_left = n < maxiter
+            option_1 = not_yet_escaped and iterations_left
+            option_2 = iterations_left and not_yet_escaped
             if not_yet_escaped and iterations_left:
                 z = z * z + c
                 n += 1
