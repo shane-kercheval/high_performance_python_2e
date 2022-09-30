@@ -43,4 +43,4 @@ def run_experiment(num_iterations):
 
 
 if __name__ == "__main__":
-    run_experiment(500)
+    print(run_experiment(100))
