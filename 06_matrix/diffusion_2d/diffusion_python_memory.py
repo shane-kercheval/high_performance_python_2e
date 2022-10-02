@@ -38,6 +38,14 @@ def run_experiment(num_iterations):
     start = time.time()
     for i in range(num_iterations):
         evolve(grid, 0.1, scratch)
+        # scratch is the output and is the object updated in evolve
+        # it is assigned into the grid variable so grid becomes the input in the subsequent iteration
+        # scratch then gets assigned grid (actually they are swapped at the same time)
+        # which was the old/previous input and the values are no longer needed,
+        # and will be used for the output during the next iteration
+        # note that the values are not zeroed out, like they are in the original version
+        # but that doesn't matter because each element is overwritten in evolve;
+        # the point is to recycle the memory so we don't care about old values
         grid, scratch = scratch, grid
     return time.time() - start
 
